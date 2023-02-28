@@ -86,13 +86,12 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /* background-image:  radial-gradient(#ffc107 2px, transparent 2px), radial-gradient(#ffc107 2px, #ffffff 2px);
+  background-size: 40px 40px;
+  background-position: 0 0,20px 20px; */
+
+
+  
 }
 
 a {
@@ -104,4 +103,12 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+/* body {
+  background-image: url(../public/images/mokume.jpg);
+} */
+
+body {
+  background-color: #3e383810;
 }

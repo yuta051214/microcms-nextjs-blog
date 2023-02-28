@@ -1,17 +1,44 @@
 import { client } from "../../libs/client";
+import Container from '@mui/material/Container';
+import Header from "@/components/Header";
+import Footer from "../Footer";
 
 export default function BlogId({ blog }) {
   return (
-    <main>
-      <h1>{blog.title}</h1>
-      <p>{blog.publishedAt}</p>
-      <p>{blog.category && blog.category.name}</p>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: `${blog.content}`,
-        }}
+    // <main>
+    //   <h1>{blog.title}</h1>
+    //   <p>{blog.publishedAt}</p>
+    //   <p>{blog.category && blog.category.name}</p>
+    //   <div
+    //     dangerouslySetInnerHTML={{
+    //       __html: `${blog.content}`,
+    //     }}
+    //   />
+    // </main>
+
+    <>
+      <Container maxWidth="lg">
+        <Header title="Blog"  />
+        <main>
+          <h1>{blog.title}</h1>
+          <p>{blog.publishedAt}</p>
+          <p>{blog.category && blog.category.name}</p>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: `${blog.content}`,
+            }}
+          />
+        </main>
+      </Container>
+      <Footer
+        title="Footer"
+        description="Something here to give the footer a purpose!"
       />
-    </main>
+    </>
+
+
+
+
   );
 }
 
