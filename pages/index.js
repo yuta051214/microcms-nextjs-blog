@@ -7,9 +7,9 @@ import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from '../components/Header';
-import MainFeaturedPost from './MainFeaturedPost';
-import FeaturedPost from './FeaturedPost';
-import Footer from './Footer';
+import MainFeaturedPost from '../components/MainFeaturedPost';
+import FeaturedPost from '../components/FeaturedPost';
+import Footer from '../components/Footer';
 
 
 const mainFeaturedPost = {

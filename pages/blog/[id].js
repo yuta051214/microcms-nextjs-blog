@@ -1,7 +1,7 @@
 import { client } from "../../libs/client";
 import Container from '@mui/material/Container';
 import Header from "@/components/Header";
-import Footer from "../Footer";
+import Footer from "../../components/Footer";
 
 export default function BlogId({ blog }) {
   return (
