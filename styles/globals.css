@@ -112,3 +112,7 @@ a {
 body {
   background-color: #3e383810;
 }
+
+.image-wrapper {
+  display: none;
+}
